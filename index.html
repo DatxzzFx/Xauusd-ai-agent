@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAUUSD AI TERMINAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">XAUUSD AI AGENT <span id="status">● LIVE</span></div>
+        
+        <div class="display">
+            <div class="price-box">
+                <small>CURRENT PRICE</small>
+                <h1 id="price">0.00</h1>
+            </div>
+
+            <div id="signal-box" class="signal-box">
+                <div id="action" class="action-text">ANALYZING...</div>
+                <div class="raw-signal" id="raw-signal">TP : 0 SL : 0 ACTION</div>
+            </div>
+
+            <div class="details">
+                <div class="col">TP: <span id="tp-val">--</span></div>
+                <div class="col">SL: <span id="sl-val">--</span></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            AUTO-SYNC: <span id="timer">30</span>S
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/signal.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
